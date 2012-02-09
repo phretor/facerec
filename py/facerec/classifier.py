@@ -75,7 +75,7 @@ class SVM(AbstractClassifier):
 	step.
 	"""
 	
-	def __init__(self, param=svm_parameter("-q")):
+	def __init__(self, param=None):
 		AbstractClassifier.__init__(self)
 		self.logger = logging.getLogger("facerec.classifier.SVM")
 		self.param = param
